@@ -1,0 +1,240 @@
+/* makes the color of the link and link itself border green if hovered over */
+header a:hover {
+    border: 2px solid #00ab00;
+    color: #00bb00;
+    background-color: #444488;
+}
+
+/* sets color of header to be a dull blue */
+header {
+    background: #444444;
+    width: 100%;
+}
+
+/* gives h1 text gradient going from green to blue */
+header h1{
+    padding: 10px;
+    background-image: linear-gradient(to right, #ffffff, #ddffdd);
+    background-size: 45%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+/* adds padding to h2 header */
+header h2 {
+    padding: 10px;
+    color: #dddddd;
+}
+
+/* adds line under h2 header */
+header h2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 1%;
+    width: 98%;
+    height: 2px;
+    background-color: #eeeeee;
+}
+
+/* page that website is on should have dark green text and button */
+header a.active {
+    border: 2px solid #00ab00;
+    color: #00bb00;
+    max-width: 11%;
+}
+
+/* removes bullet points for top links */
+header ul {
+    list-style-type: none;
+}
+
+/* creates a dull grey border for navigation links, sets text color to black */
+header a {
+    text-decoration: none;
+    color: #dddddd;
+    background-color: #444444;
+    padding: 5px 2px;
+    margin: 0.5em 0.5em;
+    border: 2px solid #cccccc;
+    display: inline-block;
+    max-width: 19%;
+    transition: background-color 0.5s linear;
+}
+
+/* removes bullet points from items in main-footer class */
+.main-footer {
+
+    flex-direction: column;
+    list-style-type: none;
+}
+
+/* removes bullet points from items in social-media class */
+.social-media {
+    flex-direction: column;
+    list-style-type: none;
+}
+
+/* sets color of footer to dull blue, centers all the text, forces footer to very bottom */
+footer {
+    background: #444444;
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+    color: #cccccc;
+}
+
+/* adds padding to the footer */
+footer a {
+    text-decoration: underline;
+    padding: 5px 2px;
+    margin: 0px 0.5em;
+    color: #cccccc;
+}
+
+/* gives copyright text margin */
+.copyright {
+    margin: 1em;
+    color: #cccccc;
+}
+
+/* sets body of text to Arial and places it in flex-box */
+body {
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: flex-start;
+    margin: 0px;
+    background: #333333;
+    color: #cccccc;
+}
+
+/* adds 2em margins to left and right of body text in body */
+body p {
+    margin-left: 2em;
+    margin-right: 2em;
+    color: #cccccc;
+}
+
+/* adds 2em margins to left and right of header text in body */
+body h3 {
+    margin-left: 2em;
+    margin-right: 2em;
+    color: #cccccc;
+}
+
+/* hides checkbox and hamburger menu button when screen is larger than 768 px */
+header input[type='checkbox'],
+header label {
+    display: none;
+}
+
+/* makes label for contact me page in block/vertical format */
+p label {
+    display: block;
+}
+
+/* makes input for contact me page in block/vertical format */
+p input {
+    display: block;
+}
+
+/* changes the header and footer formatting if screen width is smaller than 768 px */
+@media screen and (max-width: 768px) {
+
+    /* always hides checkbox */
+    header input[type='checkbox'] {
+        display: none;
+    }
+
+    /* shows items in nav */
+    header nav ul {
+        display: block;
+    }
+
+    /* show the hamburger menu button */
+    header label {
+        display: block;
+    }
+
+    /* adds padding to the hamburger menu button */
+    .menu-icon {
+        padding: 1em;
+    }
+
+    /* when menu button is clicked - show the links */
+    header input[type='checkbox']:checked + nav ul {
+        display: block;
+    }
+
+    /* if the menu button is clicked again - hide the links */
+    header input[type='checkbox']:checked + label + nav ul {
+        display: none;
+    }
+
+    /* resizes top link box so it fills up 90 percent of screen */
+    header a {
+        text-decoration: none;
+        color: #dddddd;
+        padding: 5px 2px;
+        margin: 0.5em 0.5em;
+        display: block;
+        border: 2px solid #cccccc;
+        max-width: 90%;
+    }
+
+    /* turns the top link green when hovered over, for >=768px */
+    header a.active {
+        border: 2px solid #00ab00;
+        color: #00bb00;
+        max-width: 90%;
+    }
+
+    /* aligns text to left when view width is less than 768 px */
+    footer {
+        margin-top: auto;
+        text-align: left;
+        width: 100%;
+    }
+
+    /* keeps copyright text centered */
+    .copyright {
+        text-align: center;
+    }
+
+    /* sets bullet points to greater than symbol, and displays main-footer items vertically */
+    .main-footer a {
+        display: list-item;
+        list-style-type: '>';
+    }
+
+    /* adds line above social-media items to seperate them from the site links */
+    .social-media:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 1%;
+        width: 98%;
+        height: 1px;
+        background-color: #667788;
+    }
+
+    /* makes social-media items display vertically */
+    .social-media a{
+        display: list-item;
+    }
+
+    /* keeps copyright text centered */
+    header h1{
+        padding: 10px;
+        background-image: linear-gradient(to right, #ffffff, #ddffdd);
+        background-size: 90%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+}

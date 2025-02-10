@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Load index.css for page-->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="formatting.css">
+    <title>Contact Me</title>
+</head>
+<body>
+
+    <!-- Code for the header. The page user is on should have the active class -->
+    <header>
+        <h1>David Tran's Portfolio</h1>
+        <!-- Uncomment this out for the dark mode version -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">About Me</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="contactme.html" class="active">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+        <h2>Contact Me</h2>
+    </header>
+
+    <!-- Content for the Contact Me section -->
+    <p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email">
+        <label for="reason">Reason:</label>
+        <input type="text" id="reason" name="reason">
+    </p>
+    <p>
+        <button id="acceptButton">Accept</button>
+    </p>
+
+    <!-- Code for the footer -->
+    <footer>
+        <ul class="main-footer">
+            <li>
+                <a href="aboutme.html">About Me</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.html">Resume</a>
+                <a href="contactme.html">Contact Me</a>
+            </li>
+        </ul>
+        <ul class="social-media">
+            <li>
+                <a href="https://www.linkedin.com/in/david-tran-54ab33225/">LinkedIn</a>
+                <a href="https://github.com/404-d00d">GitHub</a>
+            </li>
+        </ul>
+        <div class="copyright">©2024 - David Tran</div>
+    </footer>
+
+</body>
+</html>
