@@ -1,0 +1,1 @@
+The website as it is using only HTML and CSS.
