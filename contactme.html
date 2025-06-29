@@ -45,7 +45,7 @@
         <input type="submit" value="Submit">
         </form>
     </p>
-    
+
     <!-- Code for the footer -->
     <footer>
         <ul class="main-footer">
@@ -65,6 +65,15 @@
         </ul>
         <div class="copyright">©2024 - David Tran</div>
     </footer>
+
+<script>
+    const textarea = document.getElementById('message');
+
+    textarea.addEventListener('input', function () {
+        this.style.height = 'auto';       // Reset height
+        this.style.height = this.scrollHeight + 'px'; // Set new height
+    });
+</script>
 
 </body>
 </html>

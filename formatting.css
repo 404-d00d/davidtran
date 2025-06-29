@@ -143,6 +143,17 @@ p input {
     display: block;
 }
 
+form {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    height: 400%;
+}
+
 /* changes the header and footer formatting if screen width is smaller than 768 px */
 @media screen and (max-width: 768px) {
 
